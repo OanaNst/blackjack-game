@@ -1,7 +1,17 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
 body {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
   background-image: url(images/table.jpg);
+  background-size: cover;
   text-align: center;
   color: white;
   font-size: 3.5rem;
@@ -15,4 +25,24 @@ h1 {
 
 #message-el {
   font-style: italic;
+}
+
+button {
+  border: none;
+  padding: 10px 20px;
+  width: auto;
+  font-size: 3.5rem;
+  font-weight: bold;
+  border-radius: 10px;
+  color: #00544f;
+  background-color: goldenrod;
+}
+
+button:hover {
+  color: goldenrod;
+  background-color: white;
+}
+button:active {
+  color: #00544f;
+  background-color: goldenrod;
 }
